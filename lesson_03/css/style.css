@@ -1,0 +1,59 @@
+@import url('reset.css');
+
+/* * {
+    color: grey;
+} */
+
+p {
+    color: black;
+}
+
+.header-navigation a {
+    color: blue;
+}
+
+[class*="par"] {
+    color: brown;
+}
+
+p.first-paragraf {
+    color: yellow;
+}
+
+.red,
+.blue {
+    color: red;
+}
+
+.first-class.second-class{
+    color: yellowgreen;
+}
+
+.for-span .pink-span{
+    color: pink;
+}
+
+/*FOOTER*/
+footer > ul > li {
+    color: red;
+}
+
+footer > ul > li ~ li {
+    color: green;
+}
+
+footer li > ul > li{
+    color: blue;
+}
+
+footer li > ul > li + li{
+    color: orange;
+}
+
+footer ol > li{
+    color: #4597f7;
+}
+
+footer ol > li + li{
+    color: #5d5d5d;
+}
