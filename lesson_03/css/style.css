@@ -42,12 +42,16 @@ footer > ul > li ~ li {
     color: green;
 }
 
-footer li > ul > li{
+footer ul > li > ul > li{
     color: blue;
 }
 
 footer li > ul > li + li{
     color: orange;
+}
+
+footer li > ul > li > span{
+    color: #a0f0fc;
 }
 
 footer ol > li{
