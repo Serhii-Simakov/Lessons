@@ -1,0 +1,135 @@
+@import url('reset.css');
+@import url('fonts.css');
+
+body{
+    font-family: "Circular Std", sans-serif;
+    font-size: 14px;    
+    color: #ffffff;    
+}
+
+header{
+    background-color: aquamarine;
+    color: #000;
+}
+
+header, main{
+    padding: 20px;
+}
+
+main{
+    background-color: #231F8B;
+}
+
+.main-text{
+    margin-bottom: 70px;
+}
+
+h6{
+    color:#5A54F2;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.paragraf{
+    font-family: "Montserrat", sans-serif;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.div-wrapper{
+    margin: 0 -17px;
+    vertical-align: top;
+}
+
+.white-div{
+    background-color: #ffffff;
+    width: 230px;
+    padding: 35px 40px;
+    display: inline-block;
+    margin: 0 17px;
+    vertical-align: top;
+}
+
+.div-wrapper .white-div + .moved{
+    margin-top: 48px;
+}
+
+.white-div .paragraf{
+    color: #737373;
+}
+
+.white-div img + h5{
+    color: #252B42;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+.white-div img, h5, .line{
+    margin-bottom: 20px;
+}
+
+.line{
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #E74040;
+}
+
+.violet-block{
+    background-color: #5A54F2;
+}
+
+.violet-block .paragraf{
+    color: #ffffff;
+}
+
+.violet-block img + h5{
+    color: #ffffff;
+}
+
+.violet-block .line{
+    background-color: #ffffff;
+}
+
+footer{
+    background-color: #f3a033;
+    padding: 20px;
+}
+
+.box-sizing{
+     /* box-sizing: content-box; */
+     box-sizing: border-box;
+     width: 500px;
+     height: 200px;
+     padding: 20px;
+     margin: 10px;
+     /* overflow: clip;
+     overflow: hidden; */
+     /* overflow: scroll; */
+     overflow: auto;
+     /* overflow-y: auto;
+     overflow-x: auto; */
+}
+
+.links a{
+    color: blue;
+    /* display: inline-block; */
+    display: block;
+}
+
+a.hide{
+    display: none;
+}
+
+.father{
+    background-color: #737373;
+    text-align: center;
+}
