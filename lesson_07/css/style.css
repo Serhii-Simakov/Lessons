@@ -1,0 +1,211 @@
+@import url("reset.css");
+
+body{
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    line-height: normal;
+    color: #4f4f4f;
+}
+
+.header p{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    text-shadow: 3px 4px 4px #db43ba;
+    transition: all 0.3s ease;
+}
+
+.header p::before{
+    content: url("../img/icons/html.svg");
+}
+
+.header p::after{
+    content: url("../img/icons/arrow.svg");
+    width: 30px;
+}
+
+.header p:hover{
+    text-shadow: -7px -4px 3px #8df34a;
+}
+
+.facultet-holder {    
+    background-color: #412672;
+    padding: 61px 0 102px;
+}
+
+.facultet-container {
+    max-width: 1231px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.facultet-container > h1{
+    color: #ffffff;
+    font-size: 38px;
+    margin-bottom: 31px;
+}
+
+.facultet-wrapper {
+    font-size: 0;
+    margin: 0 -10px;
+}
+
+.facultet-card {
+    min-height: 468px;
+    max-width: 387px;
+    padding: 20px;
+    background-color: #ffffff;
+    display: inline-block;
+    font-size: 15px;
+    vertical-align: top;
+    margin: 0 10px;
+}
+
+.facultet-card *:not(:last-child){
+    margin-bottom: 16px;
+}
+
+.facultet-card:hover{
+    background-color: #FFBE48;
+    transition: all 0.3s ease;
+}
+
+.facultet-name {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+}
+
+.facultet-link{
+    color: #FE3F3F;
+}
+
+.facultet-link:hover{
+    text-decoration: underline;
+}
+
+/*PSEUDO section-------------------------------------------*/
+.pseudo-container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.pseudo-wrapper {
+    padding: 30px 0;
+    font-size: 0;
+    text-align: center;
+}
+
+.pseudo-wrapper > div{
+    width: 200px;
+    height: 200px;
+    background-color: #cccccc;
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 15px;
+    vertical-align: top;
+    padding: 15px;
+}
+
+.pseudo-wrapper > div:first-child:active{
+    background-color: aqua;
+}
+
+.pseudo-wrapper > div + a{
+    width: 200px;
+    height: 200px;
+    background-color: #cccccc;
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 15px;
+    padding: 15px;
+}
+
+.pseudo-wrapper > div + a:focus{
+    background-color: rgb(80, 187, 230);
+}
+.pseudo-wrapper > div + a:focus-visible{
+    border: 2px solid #f3c64a;
+    outline: none;
+}
+
+.pseudo-wrapper + a{
+    color: blue;
+    margin-bottom: 30px;
+}
+
+.pseudo-wrapper + a:hover{
+    text-decoration: underline;
+}
+
+/* .pseudo-wrapper + a:visited{
+    color: hotpink;
+} */
+
+.pseudo-wrapper > div:nth-child(3){
+    visibility: hidden;
+}
+
+.pseudo-wrapper > div:nth-child(3):target{
+    visibility: visible;
+}
+
+.pseudo-wrapper div:last-of-type{
+    background-color: #FFBE48;
+}
+
+.pseudo-wrapper + a + ul li:nth-child(even){
+    color: brown;
+}
+
+.pseudo-container ul > li:nth-of-type(2n + 1):hover{
+    color: #20cac2;
+}
+
+.list:has(.mb) li{
+    margin-bottom: 10px;
+}
+
+/*California --------------------------------------------*/
+
+.california-container{
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.california-wrapper{
+    margin: 50px 0;
+}
+
+.california-wrapper > *:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.california-wrapper h2:first-child{
+    color: #412672;
+    font-size: 34px;
+}
+
+.california-wrapper > h2 ~ p{
+    font-size: 22px;
+    color: #412672;
+}
+
+.california-wrapper > ul{
+    font-size: 20px;
+}
+
+.california-wrapper > ul li{
+    margin-bottom: 21px;
+}
+
+.california-wrapper > ul li:last-child{
+    margin-bottom: 0;
+}
+
+.california-wrapper > ul li::before{
+    content: url("../img/check.png");
+    vertical-align: middle;
+    margin-right: 15px;
+}
