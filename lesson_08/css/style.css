@@ -1,0 +1,44 @@
+body{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    background-color: #cccccc;
+}
+
+.header{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 45px;
+    color: brown;
+}
+
+.main{
+    text-align: center;
+}
+
+.svg-container {
+    max-width: 1402px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.svg-wrapper > *{
+    margin-bottom: 30px;
+}
+
+.main p{
+    font-size: 25px;
+}
+.svg-small img, .svg-white img, .svg-black img{
+    margin: 0 30px;
+}
+
+.rastro-wrapper > *:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.rastro-wrapper img:nth-of-type(3){
+    border: 1px solid #000;
+    border-radius: 151px 0px;
+}
+
+
