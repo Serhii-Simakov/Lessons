@@ -1,0 +1,176 @@
+@import url("reset.css");
+
+
+.header {
+}
+.main {
+    min-height: 100%;
+}
+/* .main__container {
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+.tank {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.tank__head {
+    width: 580px;
+    height: 250px;
+    background: linear-gradient(180deg, rgb(152, 187, 84) 46%, rgb(79, 118, 1));
+    border-radius: 125px;
+    border-width: 4px 13px; border-style: solid; border-color: #669900;
+    position: relative;
+    left: 25%;
+    bottom: -50px;
+}
+.tank__triplex {    
+    width: 160px;
+    height: 60px;
+    border-radius: 30px;    
+    position: absolute;
+    left: 35%;
+    top: -45px;
+    z-index: -1;
+}
+.tank__mask {
+    width: 140px;
+    height: 140px;
+    border-radius: 25%;
+    position: absolute;
+    left: -50px;
+    top: 18px;
+    z-index: -1;
+}
+.tank__triplex, .tank__mask{
+    background: linear-gradient(180deg, rgb(79, 97, 42) 46%, rgb(42, 63, 0));
+    border-width: 9px 6px; border-style: solid; border-color: #2C4200;
+}
+.tank__gun {
+    width: 280px;
+    height: 50px;
+    background-color: #2C4200;
+    position: absolute;
+    left: -270px;
+    top: 26%;
+    z-index: -2;
+}
+.tank__flamethrower {
+    width: 95px;
+    height: 85px;
+    background-color: #2C4200;
+    position: relative;
+    top: -18px;
+    border-radius: 10px;
+    z-index: -1;
+}
+.tank__flamethrower:hover {
+    background-color: #87B131;
+}
+.tank__body {
+    width: 1000px;
+    height: 215px;
+    border-radius: 100px;
+    background-color: #87B131;
+    position: relative;
+    z-index: 8;
+}
+.nld {
+    background-color: #402818;
+    width: 1000px;
+    height: 150px;
+    border-radius: 50px 50px 100px 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+}
+.tank__shelf {
+    border: 23px solid #436400;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 30px;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 10;
+}
+.tank__caterpillar {
+    border: 13px solid #9F6C4A;
+    width: 990px;
+    border-radius: 67px 67px 216px 216px;
+    position: relative;
+    top: 58px;
+    left: 4px;
+    text-align: center;
+    z-index: 10;
+}
+.tank__small-whil {
+    border: 6px solid #A06D4B;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    background: #553520;
+}
+.tank__small-whil:first-child{
+    position: absolute;
+    left: 2px;
+    top: 2px;
+}
+.tank__small-whil:last-child{
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+.tank__big-whil {
+    border: 18px solid #A06D4B;
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px;
+    background: #553520;
+}
+
+.transform{
+    margin-top: 150px;
+}
+
+.transform__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.transform__holder {
+    font-size: 0;
+}
+.block {
+    display: inline-block;
+    background-color: #f1adad;
+    width: 200px;
+    height: 200px;
+    /* perspective: 200px;
+    perspective-origin: center; */
+}
+.block__in {
+    width: 100%;
+    height: 100%;
+    background-color: #d6f793;
+}
+
+.block__in:hover {
+    transition: all 0.8s;
+    /* transform: translate(30px, 30px); */
+    /* transform: scale(1.1); */
+    transform: rotate(360deg);    
+    /* transform: skew(10deg, 10deg); */
+    /* transform: translate(30px, 30px) rotate(45deg) scale(1.3); */
+    /* transform-origin: top center; */
+    /* transform: translate3d(10px, 20px, 30px);*/
+    /* transform: scale3d(2, 1.5, 1.5); */
+    /* transform: rotate3d(1, 1, 1, 45deg); */
+    /* backface-visibility: hidden; */
+}
