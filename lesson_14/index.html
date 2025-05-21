@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Lesson 14</title>
+</head>
+
+<body>
+    <header class="header">
+
+    </header>
+    <main class="main">
+        <div class="order">
+            <div class="order__container">
+                <div class="order__wrapper">
+                    <form action="#" class="order__big-form">
+                        <h2 class="title">
+                            Billing Information
+                        </h2>
+                        <div class="value-wrapper">
+                            <label>
+                                <span>First name</span>
+                                <input type="text" placeholder="Your first name">
+                            </label>
+                            <label>
+                                <span>Last name</span>
+                                <input type="text" placeholder="Your last name">
+                            </label>
+                            <label>
+                                <span>Company Name <span class="optional">(optional)</span></span>
+                                <input type="text" placeholder="Company name">
+                            </label>
+                        </div>
+                        <div class="value-wrapper">
+                            <label>
+                                <span>Street Address</span>
+                                <input type="text" placeholder="Street Address">
+                            </label>
+                        </div>
+                        <div class="value-wrapper">
+                            <label>
+                                <span>Country / Region</span>
+                                <select name="form[]">
+                                    <option value="1">Select</option>
+                                    <option value="2">Select 2</option>
+                                </select>
+                            </label>
+                            <label>
+                                <span>States</span>
+                                <select name="form[]">
+                                    <option value="1">Selects</option>
+                                    <option value="2">Select 2</option>
+                                </select>
+                            </label>
+                            <label>
+                                <span>Zip Code</span>
+                                <input type="text" placeholder="Zip Code">
+                            </label>
+                        </div>
+                        <div class="value-wrapper">
+                            <label>
+                                <span>Email</span>
+                                <input type="text" placeholder="Email Address">
+                            </label>
+                            <label>
+                                <span>Phone</span>
+                                <input type="text" placeholder="Phone number">
+                            </label>
+                        </div>
+                        <div class="value-wrapper">
+                            <label class="row">
+                                <input type="checkbox">
+                                <span>Ship to a different address</span>
+                            </label>
+                        </div>
+                        <h2 class="title">
+                            Billing Information
+                        </h2>
+                        <div class="value-wrapper">
+                            <label>
+                                <span>Order Notes <span class="optional">(Optional)</span></span>
+                                <textarea
+                                    placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                            </label>
+                        </div>
+                    </form>
+                    <form action="#" class="order__small-form">
+                        <div class="summery">
+                            <h3 class="title title_small">
+                                Order Summery
+                            </h3>
+                            <div class="summery__wrapper">
+                                <div class="summery__inner">
+                                    <img src="img/g-pepper.png" alt="Green pepper" class="summery__img">
+                                    <div class="summery__name">
+                                        Green Capsicum
+                                    </div>
+                                    <div class="summery__amount">
+                                        x5
+                                    </div>
+                                </div>
+                                <div class="summery__price">
+                                    $70.00
+                                </div>
+                            </div>
+                            <div class="summery__wrapper">
+                                <div class="summery__inner">
+                                    <img src="img/r-pepper.png" alt="Red pepper" class="summery__img">
+                                    <div class="summery__name">
+                                        Red Capsicum
+                                    </div>
+                                    <div class="summery__amount">
+                                        x1
+                                    </div>
+                                </div>
+                                <div class="summery__price">
+                                    $14.00
+                                </div>
+                            </div>
+                            <div class="summery__wrapper">
+                                <div class="summery__name">
+                                    Subtotal:
+                                </div>
+                                <div class="summery__price">
+                                    $84.00
+                                </div>
+                            </div>
+                            <div class="summery__wrapper">
+                                <div class="summery__name">
+                                    Shipping:
+                                </div>
+                                <div class="summery__price">
+                                    Free
+                                </div>
+                            </div>
+                            <div class="summery__wrapper">
+                                <div class="summery__name">
+                                    Total:
+                                </div>
+                                <div class="summery__price summery__price_bold">
+                                    $84.00
+                                </div>
+                            </div>
+                            <h3 class="title title_small">
+                                Payment Method
+                            </h3>
+                            <div class="payment">
+                                <label class="payment__label">
+                                    <input type="radio" class="payment__input" name="form[summery]">
+                                    <span class="radio-btn inside"></span>
+                                    <span class="payment__text">Cash on Delivery</span>
+                                </label>
+                                <label class="payment__label">
+                                    <input type="radio" class="payment__input" name="form[summery]">
+                                    <span class="radio-btn inside"></span>
+                                    <span class="payment__text">Paypal</span>
+                                </label>
+                                <label class="payment__label">
+                                    <input type="radio" class="payment__input" name="form[summery]">
+                                    <span class="radio-btn inside"></span>
+                                    <span class="payment__text">Amazon Pay</span>
+                                </label>
+                            </div>
+                            <button type="submit" class="button">
+                                Place Order
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+@import url("reset.css");
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+    color: #1a1a1a;
+}
+
+.order {
+    padding: 32px 0 80px;
+}
+
+.order__container {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.order__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.order__big-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: auto;
+}
+
+form input,
+select,
+textarea {
+    padding: 14px 16px;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 130%;
+    color: #999;
+
+}
+
+form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+form input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 1px solid #b8b8b8;
+}
+
+form input::placeholder,
+select::placeholder,
+textarea::placeholder {
+    transition: opacity 0.3s;
+}
+
+form input:focus-visible::placeholder,
+select:focus-visible::placeholder,
+textarea:focus-visible::placeholder {
+    opacity: 0;
+}
+
+.order__big-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1 1 872px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.value-wrapper {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.order__big-form .row {
+    flex-direction: row;
+    border-bottom: 2px solid #e6e6e6;
+    padding-bottom: 32px;
+    margin-bottom: 16px;
+}
+
+.optional {
+    opacity: 0.6;
+}
+
+.order__small-form {
+    flex: 1 1 424px;
+}
+
+.summery {
+    border-radius: 8px;
+    border: 1px solid #e6e6e6;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title_small {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.summery__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summery__wrapper:nth-child(4), .summery__wrapper:nth-child(5), .summery__wrapper:nth-child(6){
+    padding: 12px 0px;
+}
+
+.summery__wrapper:nth-child(4), .summery__wrapper:nth-child(5){
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.summery__wrapper:nth-child(6){
+    padding-bottom: 24px;
+}
+
+.summery__inner {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+}
+
+.summery__img {
+    width: 60px;
+    height: 60px;
+}
+
+.summery__name{
+    color: #4d4d4d;
+}
+
+.summery__price {
+    font-weight: 500;
+}
+
+.summery__price_bold{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.payment__input{
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.payment__label {
+    display: inline-flex;
+    gap: 6px;
+}
+
+.radio-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    position: relative;
+    transition: border-color 0.2s;
+}
+
+.inside::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.2s;
+}
+
+.payment__text{
+    display: flex;
+    gap: 6px;
+}
+
+.payment__input:checked + .radio-btn{
+    border: 2px solid #00B207;
+}
+
+.payment__input:checked + .inside::before{
+    background-color: #00B207;
+}
+
+.button {
+    background-color: #00B207;
+    border-radius: 43px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+    padding: 16px;
+    transition: all 0.3s;
+}
+
+.button:hover{
+    cursor: pointer;
+    background: #4c4c4c;
+    transition: all 0.3s;
+}
