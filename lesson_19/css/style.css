@@ -1,0 +1,196 @@
+@import url("reset.css");
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 0.875rem;
+}
+body > *{
+    margin-bottom: 1.25rem;
+}
+
+.percent{
+    background-color: aqua;
+    color: #fff;
+    width: 18.75rem;
+    height: 18.75rem;
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+.percent-kid{
+    background-color: blue;    
+    width: 50%;
+    height: 50%;
+    font-size: 1.5625rem;
+    transform: translate(20%, 30%);    
+}
+
+.rem-test{
+    width: 10rem;
+    font-size: 1.25rem;
+    margin-left: 1.875rem;
+}
+
+.em-test{
+    font-size: 1.0625rem;
+    line-height: 1.25;
+    margin-bottom: 0.75em;
+}
+
+@media (max-width: 50em){
+    .em-test{
+        font-size: 1rem;
+    }
+}
+
+.svh{
+    background-color: aquamarine;
+    height: 100vmin;
+}
+
+.calc{
+    background-color: blueviolet;
+    height: 1.25rem;
+    width: calc(100% - 1.875rem);
+}
+
+.clamp{
+    font-size: clamp(0.875rem, 5vw, 1.25rem);
+    background-color: burlywood;
+    width: min(600px, 100%);
+}
+
+:root{
+    --color1: red;
+    --color2: green;
+    --color3: orange;
+}
+
+.root{
+    width: 12.5rem;
+    height: 12.5rem;
+    background-color: var(--color3);
+    color: var(--color1);
+}
+
+.root p{
+   --color2: yellow;
+   color: var(--color2); 
+}
+
+.pointer-events{
+    font-size: 2.1875rem;
+    user-select: none;
+}
+
+.pointer-events a:hover{
+    text-decoration: underline;    
+}
+
+/* @media (any-hover: none) {
+  .pointer-events a{
+    pointer-events: none;
+  }
+} */
+
+.element{
+    width: 9.375rem;
+    height: 9.375rem;
+    position: relative;
+    inset: 0 0 0 1.25rem;
+}
+
+@media (prefers-color-scheme: light) {
+  .element {
+    color: black;
+    background-color: yellowgreen;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .element {
+    color: white;
+    background-color: black;
+  }
+}
+
+.blend-mode{
+    display: inline-block;
+    background-color: chocolate;
+}
+
+.blend-mode img{
+    mix-blend-mode: color-dodge;
+}
+
+.writing-mode{
+    font-size: 2.1875rem;
+    writing-mode: vertical-lr;
+    /* text-orientation: upright; */
+    color: var(--color2);
+    inline-size: 25rem;
+    block-size: 3.125rem;
+    padding-inline-start: 1.25rem;
+    border-inline-start: 0.125rem solid #000;
+}
+
+.post{
+    container-type: inline-size;
+}
+
+.title{
+    font-size: 1.5625rem;
+}
+
+@container (max-width: 48.0613rem){
+    .title{
+        font-size: 2.8125rem;
+    }
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 0.625rem;
+}
+
+.item{
+    display: grid;
+    background-color: var(--color2);
+    grid-template-columns: subgrid;
+    grid-template-rows: repeat(4, 20px);
+    gap: 0.625rem;
+}
+
+.item2{
+    background-color: var(--color3);
+}
+
+.star{
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background-color: var(--color2);
+    width: 12.5rem;
+    height: 12.5rem;
+}
+
+.scroll{
+    font-size: 1.5625rem;
+
+}
+
+.scroll a{
+    font-weight: bold;
+}
+
+.scroll a:hover{
+    color: blue;
+}
+
+h3{
+    scroll-margin-top: 1rem;
+    font-weight: bold;
+}
